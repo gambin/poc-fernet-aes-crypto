@@ -22,7 +22,7 @@ export const handler = async (event) => {
     // Example: "Brxd-7fAiRQFYz2eI81ZNzCzJwf7BjAsMjtx-_KH5wo="
     /* let key = Fernet.generateKey(); */
 
-    let cryptoKey = process.env.MY_VAR || "qltrY4rh25bHsAgGSqgh3EBhrHgELCtH4lrNzADxVK8";
+    let cryptoKey = process.env.CRYPTO_KEY || "qltrY4rh25bHsAgGSqgh3EBhrHgELCtH4lrNzADxVK8";
 
     // Create new Fernet instance
     const f = new Fernet(cryptoKey);
